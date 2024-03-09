@@ -43,7 +43,7 @@ const linksNav: LinkList = {
 
 export default function ProfilePage() {
     const isDesktopOrLaptop = useMediaQuery({maxWidth:1023})
-    const imageSize = isDesktopOrLaptop ? 250 : 400
+    const imageSize = isDesktopOrLaptop ? 250 : 350
     return (
         <section className="bg-profile w-full pb-12 flex flex-col sm:items-center spacer bg-teste xl:h-[85vh] 2xl:h-[98vh]" id="Home">
           <Navbar linkList={ linksNav.linkList } blue={ linksNav.blue }/>
