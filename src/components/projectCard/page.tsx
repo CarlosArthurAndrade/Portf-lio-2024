@@ -1,5 +1,6 @@
 import { Quicksand } from 'next/font/google'
 import Image, { StaticImageData } from "next/image"
+import { useMediaQuery } from 'react-responsive'
 
 const quicksand = Quicksand({
     subsets: ['latin'],
@@ -14,14 +15,18 @@ interface ProjectInterface {
 }
 
 const ProjectCard: React.FC<ProjectInterface> = ({ image, title, link, href }) => {
+
+    const isDesktopOrLaptop = useMediaQuery({maxWidth:639})
+    const imageSize = isDesktopOrLaptop ? 300 : 250
+
     return(
-        <div className="md:w-[49%] bg-project flex flex-col items-center mb-8">
+        <div className="sm:w-[49%] bg-project flex flex-col items-center mb-8">
             <div className="flex flex-col items-center justify-center w-full">
                 <div className="bg-project">
                     <Image
                     src={ image }
                     alt="Imagem do projeto"
-                    width={250}
+                    width={ imageSize }
                     />
                 </div>
                 <div className="w-full bg-white flex flex-col items-center justify-start p-8">

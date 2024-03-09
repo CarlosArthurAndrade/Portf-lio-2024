@@ -87,7 +87,7 @@ export default function ProjectsPage() {
                         <h1 className={`text-2xl ${comfortaa.className} lg:text-3xl`}>/Projetos</h1>
                         <p className={`text-md ${comfortaa.className} lg:text-xl`}>Projetos que desenvolvi.</p>
                     </div>
-                    <div className="w-[90%] flex flex-col md:flex-row md:flex-wrap md:justify-between md:px-12 items-center bg-light-blue pb-12 xl:pb-16">
+                    <div className="w-[90%] flex flex-col sm:flex-row sm:flex-wrap sm:justify-between md:px-12 items-center bg-light-blue pb-12 xl:pb-16">
                         {
                             projects.map((project, index) => {
                                 return(
