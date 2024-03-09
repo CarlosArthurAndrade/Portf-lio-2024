@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  @apply transition-colors duration-200
+}
+
+@layer utilities {
+  .bg-blue {
+      background-color: rgb(30, 30, 109);
+  }
+
+  .bg-light-green {
+    background-color: rgb(232, 249, 241);
+  }
+
+  .border-green {
+    border-color: rgb(113, 201, 134);
+  }
+
+  .bg-light-red {
+    background-color: rgb(250, 237, 237)
+  }
+
+  .border-red {
+    border-color: rgb(255, 20, 20)
+  }
+
+  .bg-profile {
+    background-color: rgb(47, 50, 131);
+  }
+
+  .text-profile {
+    color: rgb(15, 220, 255)
+  }
+
+  .bg-light-blue {
+    background-color: rgb(245, 244, 252);
+  }
+
+  .bg-button {
+    background-color: rgb(65, 74, 214);
+  }
+
+  .bg-dark-blue{
+    background-color: rgb(47, 50, 131);
+  }
+
+  .bg-project {
+    background-color: rgb(249, 248, 253);
+  }
+
+  .text-light-blue {
+    color: rgb(15, 220, 255);
+  }
+
+  .text-blue {
+    color: rgb(65, 74, 214);
+  }
+
+  .text-green {
+    color: rgb(44, 167, 101);
+  }
+
+  .text-red {
+    color: rgb(254,78,78);
+  }
+
+  .border-blue {
+    border-color: rgb(65, 74, 214);
+  }
+
+  .bg-beige {
+    background-color: rgb(249,249,249);
+  }
+
+  .spacer {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg-wave {
+    background-image: url('../svg/svg-wave-1.svg');
+  }
+
+  .bg-waves {
+    background-image: url('../svg/blue-layered-waves.svg');
+  }
+
+  .bg-teste {
+    background-image: url('../svg/top-blue-waves-2.svg');
+  }
+}
